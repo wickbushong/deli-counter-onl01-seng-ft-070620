@@ -4,7 +4,7 @@ def line(queue)
   else
     deli = "The line is currently: "
     queue.each_with_index {|person, i|
-      deli << "#{i+1}. #{person}"
+      deli << "#{i+1}. #{person} "
     }
     puts deli
   end
