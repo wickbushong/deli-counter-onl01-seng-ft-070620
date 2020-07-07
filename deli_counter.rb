@@ -1,6 +1,13 @@
-def line
+def line(queue)
   if queue.length == 0
     puts "The line is currently empty."
+  else
+    deli = "The line is currently: "
+    queue.each_with_index {|person, i|
+      deli << "#{i+1}. #{person}"
+    }
+    puts deli
+  end
 end
 
 
